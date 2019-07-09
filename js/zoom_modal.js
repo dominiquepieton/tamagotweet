@@ -3,12 +3,14 @@ var myImg = document.getElementById("tweetGo");
 
 myImg.style.width= newtaille + "px"; //j'applique ma variable newtaille au style en HTML a myImg
 myImg.style.height= newtaille + "px" ;
-if(nbtweet==8){
+if(nbtweet==7){   //    sert pour afficher la gif du vomit
+  myImg.src="img/hvomit.gif";
+}else if(nbtweet==8){  // on reinitialise le compteur et l'image.
     reinit();
 }
 
 
-function reinit(){
+function reinit(){             // fonction reinitialisation et redimensionne l'image.
     myImg.src="../img/homer.gif"
     var currHeight = myImg.clientHeight;
     var currWidth = myImg.clientWidth;
@@ -32,7 +34,7 @@ var span = document.getElementsByClassName("modalclose")[0];
 // bouton qui permet d'ouvrir le modal aprés n tweets
 btn.onclick = function() {
 
-    if (nbtweet == 7){
+    if (nbtweet == 6){
         modal.style.display = "block";
     }
 }
@@ -47,9 +49,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
-
-
-if(nbtweet==7){
-  myImg.src="img/hvomit.gif";
 }

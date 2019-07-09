@@ -1,5 +1,4 @@
 <?php
-require_once('../PHPMailer/src/PHPMailer.php');
 
 $mail = new PHPmailer();
 
