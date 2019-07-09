@@ -24,20 +24,16 @@ function reinit(){             // fonction reinitialisation et redimensionne l'i
 
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("modalBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("modalclose")[0];
 
 
 
-// bouton qui permet d'ouvrir le modal aprés n tweets
-btn.onclick = function() {
 
-    if (nbtweet == 6){
-        modal.style.display = "block";
-    }
+if (nbtweet ==5) {
+    modal.style.display = "block";
 }
+
 
 // bouton qui permet de fermer le modal
 function enleveModal() {
@@ -45,6 +41,8 @@ function enleveModal() {
 }
 
 
+
 if(nbtweet==7){
   myImg.src="img/hvomit.gif";
 }
+

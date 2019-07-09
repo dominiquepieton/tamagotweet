@@ -7,8 +7,6 @@ require_once 'PHPMailer.php';
 
 
 
-
-
 $mail = new \PHPMailer\PHPMailer\PHPMailer();
 
 $mail->SMTPDebug = \PHPMailer\PHPMailer\SMTP::DEBUG_SERVER;
@@ -44,4 +42,6 @@ else
     echo "Message has been sent successfully";
 }
 
+
 ?>
+

@@ -22,28 +22,17 @@
     <div class="container">
     <div class="image">
         <img  src="img/homer.gif" id="tweetGo">
-
     </div>
 
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="modalclose">&times;</span>
-
-            </div>
-            <div class="modal-body">
-                <p>trop de tweet, deconnecte toi !!!!</p>
-
-            </div>
-            <div class="modal-footer">
-
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span onclick=enleveModal() class="modalclose">&times;</span>
+                    <p>D'oh la la la!! Je vais gerber, arrete de tweeter!!!</p>
+                </div>
             </div>
         </div>
-    </div>
+
     <?php
     require_once("php/all.php");
     ?>
