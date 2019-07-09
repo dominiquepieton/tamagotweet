@@ -39,3 +39,10 @@ if (nbtweet ==5) {
 function enleveModal() {
     modal.style.display = "none";
 }
+
+
+
+if(nbtweet==7){
+  myImg.src="img/hvomit.gif";
+}
+
