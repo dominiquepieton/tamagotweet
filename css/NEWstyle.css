@@ -1,4 +1,4 @@
-body{
+body{     /*  police et background */
   /*background-color: #70D1FF;*/
   background-image: url('../img/fond.jpg');
   background-repeat: no-repeat;
@@ -6,12 +6,11 @@ body{
   font-family: 'Gochi Hand', cursive;
 }
 
-
-.header{
+.header{     /* titre et image donuts */
     background-image:url('../img/donuts.png');
     background-repeat: no-repeat;
     display:inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     width:300px;
     height:150px;
@@ -19,7 +18,7 @@ body{
 
 }
 
-.header-title{
+.header-title{   /* position du titre */
   display: block;
   justify-content: center;
   align-items: center;
@@ -33,8 +32,7 @@ body{
 .head-form{
   display:flex;
   justify-content: flex-end;
-
-
+  margin-left: 150px;
 
 }
 
@@ -55,13 +53,13 @@ body{
 }
 
 textarea {
-    margin-top: 50px;
+  /*  margin-top:50px;*/
     padding: 10px;
     line-height: 1;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
-    background-color: #FFD90F;
+    background-color: rgba(255,217,0,0.6);
     font-family: 'Gochi Hand', cursive;
     font-size:20px;
     /*display:flex;
@@ -74,7 +72,7 @@ input{
     width: 120px;
     height: 40px;
     border-radius:25px;
-    margin-left: 35px;
+    margin-left: 50px;
     background-color: #EC050C;
     font-family: 'Gochi Hand', cursive;
     font-size: 30px;

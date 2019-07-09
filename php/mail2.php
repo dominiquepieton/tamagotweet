@@ -1,8 +1,11 @@
 <?php
+<<<<<<< HEAD
 require_once 'Exception.php';
 require_once 'OAuth.php';
 require_once 'SMTP.php';
 require_once 'PHPMailer.php';
+=======
+>>>>>>> 58169af5162c523bc4db6f72d5f1052fe7e710a2
 
 
 
