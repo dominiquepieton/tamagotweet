@@ -1,9 +1,16 @@
 <?php
-require_once('../PHPMailer/src/PHPMailer.php');
+require_once 'Exception.php';
+require_once 'OAuth.php';
+require_once 'SMTP.php';
+require_once 'PHPMailer.php';
 
-$mail = new PHPmailer();
 
 
+
+$mail = new \PHPMailer\PHPMailer\PHPMailer();
+
+$mail->SMTPDebug = \PHPMailer\PHPMailer\SMTP::DEBUG_SERVER;
+$mail->SMTPDebug = 4; //Alternative to above constant
 $mail->isSMTP(); // Paramétrer le Mailer pour utiliser SMTP
 $mail->Host = 'smtp.gmail.com'; // Spécifier le serveur SMTP
 $mail->SMTPAuth = true; // Activer authentication SMTP
@@ -26,6 +33,13 @@ $mail->Subject = 'confirme le tweet';
 $mail->Body = "j'ai bien reçu le tweet,bois une duff";
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-
+if(!$mail->send())
+{
+    echo "Mailer Error: " . $mail->ErrorInfo;
+}
+else
+{
+    echo "Message has been sent successfully";
+}
 
 ?>
